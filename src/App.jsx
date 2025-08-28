@@ -3,7 +3,8 @@ import { navigationItems } from "./data/navigationItems";
 // Sections
 import HeroSection from "./sections/hero/HeroSection";
 import AboutSection from "./sections/about/AboutSection";
-
+import ScrollVelocity from "./components/ui/ScrollVelocity";
+import PortfolioSection from "./sections/portfolio/Portfolio";
 function App() {
   return (
     <>
@@ -20,8 +21,16 @@ function App() {
 
       {/* <HeroSection /> */}
       <HeroSection />
+
+      <ScrollVelocity
+        texts={["Muhamad Tri Saputra · Portfolio 2025 · "]}
+        velocity={10}
+        className="custom-scroll-text"
+      />
+
       {/* About Section */}
       <AboutSection />
+      <PortfolioSection />
     </>
   );
 }

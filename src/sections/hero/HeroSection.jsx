@@ -3,7 +3,7 @@ import { BackgroundLines } from "@/components/ui/background-lines";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full bg-white text-black min-h-screen flex items-center justify-center">
+    <section className="relative w-full bg-white mt-12 lg:mt-0 md:mt-0 xl:mt-0  text-black min-h-screen flex items-center justify-center">
       {/* Background */}
       <BackgroundLines className="pointer-events-none absolute inset-0" />
 

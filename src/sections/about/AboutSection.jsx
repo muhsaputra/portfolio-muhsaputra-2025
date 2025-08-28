@@ -32,8 +32,8 @@ import educationData from "@/data/aboutSectionData/educationData";
 
 // UI Components
 import Badge from "@/components/ui/Badge";
-import TimelineItem from "@/components/ui/TimelineItem";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
+import TiltedCard from "@/components/ui/TiltedCard";
 
 // Reusable components
 const SectionHeading = ({ title, subtitle }) => (
@@ -115,10 +115,24 @@ export default function AboutSection() {
           <Card className="rounded-3xl border border-neutral-200/80 dark:border-neutral-800/80">
             <CardContent className="p-8 md:p-10">
               <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
-                <img
+                {/* <img
                   src="./src/assets/images/saputra.png"
                   alt="Profile"
                   className="h-56 w-56 md:h-72 md:w-72 rounded-2xl object-cover border border-neutral-200 dark:border-neutral-800 shadow-sm"
+                /> */}
+                <TiltedCard
+                  imageSrc="./src/assets/images/saputra.png"
+                  altText="Muhamad Tri Saputra Profile"
+                  captionText="This Is me!, Muhamad Tri Saputra"
+                  containerHeight="300px"
+                  containerWidth="300px"
+                  imageHeight="300px"
+                  imageWidth="300px"
+                  rotateAmplitude={12}
+                  scaleOnHover={1.05}
+                  showMobileWarning={false}
+                  showTooltip={true}
+                  displayOverlayContent={true}
                 />
 
                 <div>
@@ -185,7 +199,7 @@ export default function AboutSection() {
                       <Download className="w-4 h-4" /> Download CV
                     </a>
                     <a
-                      href="mailto:youremail@example.com"
+                      href="https://wa.me/6281234567890"
                       className="inline-flex items-center gap-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white px-4 py-2.5 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-800"
                     >
                       <Mail className="w-4 h-4" /> Contact Me
@@ -462,7 +476,7 @@ export default function AboutSection() {
                 {/* Timeline wrapper */}
                 <div className="relative pl-10 before:absolute before:left-4 before:top-0 before:bottom-0 before:w-0.5 before:bg-gradient-to-b from-neutral-300 to-neutral-200 dark:from-neutral-700 dark:to-neutral-900 space-y-12">
                   {experiences.map((exp, idx) => (
-                    <motion.div
+                    <motion.divs
                       key={idx}
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -474,7 +488,7 @@ export default function AboutSection() {
                       <div className="absolute -left-7 top-2 w-5 h-5 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 dark:from-indigo-400 dark:to-purple-400 shadow-md ring-4 ring-white dark:ring-neutral-900"></div>
 
                       {/* Experience Card */}
-                      <div className="p-5 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white/60 dark:bg-neutral-900/60 backdrop-blur-sm hover:shadow-xl transition-transform duration-300 hover:-translate-y-1">
+                      <div className="p-5 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white/60 dark:bg-neutral-900/60 backdrop- -sm hover:shadow-xl transition-transform duration-300 hover:-translate-y-1">
                         <div className="flex items-center justify-between">
                           <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-100">
                             {exp.company}
@@ -543,7 +557,7 @@ export default function AboutSection() {
                           ))}
                         </div>
                       </div>
-                    </motion.div>
+                    </motion.divs>
                   ))}
                 </div>
               </CardContent>
@@ -582,7 +596,7 @@ export default function AboutSection() {
                       className="relative group"
                     >
                       {/* Timeline dot */}
-                      <div className="absolute -left-7 top-2 w-5 h-5 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-500 dark:from-blue-400 dark:to-cyan-400 shadow-md ring-4 ring-white dark:ring-neutral-900"></div>
+                      <div className="absolute -left-7 top-2 w-5 h-5 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 dark:from-indigo-400 dark:to-purple-400 shadow-md ring-4 ring-white dark:ring-neutral-900"></div>
 
                       {/* Education Card */}
                       <div className="p-5 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white/60 dark:bg-neutral-900/60 backdrop-blur-sm hover:shadow-xl transition-transform duration-300 hover:-translate-y-1">
@@ -643,7 +657,7 @@ export default function AboutSection() {
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a
-                    href="mailto:youremail@example.com"
+                    href="mailto:muhsaputrabiz@gmail.com"
                     className="inline-flex items-center gap-2 rounded-xl bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 px-4 py-2.5 text-sm font-medium shadow hover:opacity-90"
                   >
                     <Mail className="w-4 h-4" /> Email Saya

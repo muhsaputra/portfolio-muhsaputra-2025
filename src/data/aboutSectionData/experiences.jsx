@@ -58,7 +58,7 @@ const experiences = [
       {
         title: "Video Editor",
         year: "Apr 2024 - Jan 2025 · 10 mos",
-        desc: "Selama menjalani internship di PT Startx Digital Indonesia, saya bertanggung jawab dalam instalasi, konfigurasi, dan pemeliharaan infrastruktur jaringan ",
+        desc: "Sebagai Video Editor, saya bertugas melakukan pengeditan video sesuai arahan dan kebutuhan perusahaan. Fokus pekerjaan meliputi pemotongan, penyusunan, serta penyesuaian visual dan audio agar sesuai dengan konsep yang telah ditentukan.Mengedit video sesuai naskah dan arahan tim.",
         skills: [
           { name: "Adobe Premiere Pro", color: "red" },
           { name: "Adobe After Effects", color: "purple" },
@@ -78,7 +78,7 @@ const experiences = [
       {
         title: "Network Technician Intern",
         year: "May 2023 - Nov 2023 · 7 mos",
-        desc: "Sebagai Video Editor, saya bertugas melakukan pengeditan video sesuai arahan dan kebutuhan perusahaan. Fokus pekerjaan meliputi pemotongan, penyusunan, serta penyesuaian visual dan audio agar sesuai dengan konsep yang telah ditentukan.Mengedit video sesuai naskah dan arahan tim.",
+        desc: "Selama menjalani internship di PT Startx Digital Indonesia, saya bertanggung jawab dalam instalasi, konfigurasi, dan pemeliharaan infrastruktur jaringan.",
         skills: [
           { name: "Adobe Premiere Pro", color: "red" },
           { name: "Adobe After Effects", color: "purple" },
