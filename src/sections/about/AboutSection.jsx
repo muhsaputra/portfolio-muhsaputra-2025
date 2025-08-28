@@ -29,8 +29,10 @@ import networking from "@/data/aboutSectionData/networking";
 import experiences from "@/data/aboutSectionData/experiences";
 import skillsCreative from "@/data/aboutSectionData/skillsCreative";
 import TimelineItem from "@/components/ui/TimelineItem";
+
 // UI Components
 import Badge from "@/components/ui/Badge";
+import { PointerHighlight } from "@/components/ui/pointer-highlight";
 
 // Reusable components
 const SectionHeading = ({ title, subtitle }) => (
@@ -131,14 +133,40 @@ export default function AboutSection() {
                   </h3>
                   <p className="mt-3 text-neutral-700 dark:text-neutral-300 max-w-3xl leading-relaxed text-justifyed">
                     Saya seorang mahasiswa dengan minat di dunia teknologi dan
-                    kreativitas. Fokus utama saya adalah Frontend Development,
-                    membangun website modern yang interaktif dan responsif.
+                    kreativitas. Fokus utama saya adalah{" "}
+                    <PointerHighlight
+                      rectangleClassName="bg-blue-100 dark:bg-blue-900 border-blue-300 dark:border-blue-700 leading-loose"
+                      pointerClassName="text-blue-500 h-3 w-3"
+                      containerClassName="inline-block mx-1"
+                    >
+                      {" "}
+                      <span className="relative z-10">
+                        Frontend Development
+                      </span>
+                    </PointerHighlight>
+                    , membangun website modern yang interaktif dan responsif.
                   </p>
                   <p className="mt-3 text-neutral-700 dark:text-neutral-300 max-w-3xl leading-relaxed text-justifyed">
-                    Selain itu, saya juga memiliki pengalaman di Video Editing
-                    serta Network Administration, menjadikan saya terbiasa
-                    menggabungkan kemampuan teknis dan visual untuk menghasilkan
-                    solusi digital yang optimal.
+                    Selain itu, saya juga memiliki pengalaman di{" "}
+                    <PointerHighlight
+                      rectangleClassName="bg-green-100 dark:bg-green-900 border-green-300 dark:border-green-700 leading-loose"
+                      pointerClassName="text-green-500 h-3 w-3"
+                      containerClassName="inline-block ml-1"
+                    >
+                      <span className="relative z-10">Video Editing </span>
+                    </PointerHighlight>
+                    , serta
+                    <PointerHighlight
+                      rectangleClassName="bg-purple-200 dark:bg-purple-700 border-purple-300 dark:border-purple-600 leading-loose"
+                      pointerClassName="text-purple-500 h-3 w-3"
+                      containerClassName="inline-block mr-1"
+                    >
+                      <span className="relative z-10">
+                        Network Administration,
+                      </span>
+                    </PointerHighlight>{" "}
+                    menjadikan saya terbiasa menggabungkan kemampuan teknis dan
+                    visual untuk menghasilkan solusi digital yang optimal.
                   </p>
                   <div className="mt-5 flex flex-wrap gap-3">
                     <a
