@@ -179,7 +179,7 @@ const CardNav = ({
             className="card-nav-cta-button hidden md:inline-flex border-0 rounded-[calc(0.75rem-0.2rem)] px-4 h-full items-center font-medium cursor-pointer transition-colors duration-300"
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
           >
-            Tentang Saya
+            <a href="#about">Tentang Saya</a>
           </button>
         </div>
 

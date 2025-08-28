@@ -33,7 +33,7 @@ export default function HeroSection() {
         {/* CTA Buttons */}
         <div className="flex justify-center gap-4 mb-10">
           <a
-            href="#projects"
+            href="#about"
             className="px-6 py-3 rounded-md bg-black text-white font-medium shadow hover:bg-gray-800 transition flex items-center gap-2"
           >
             Tentang Saya
@@ -46,8 +46,10 @@ export default function HeroSection() {
           <span>🌍 Based in Serang Banten, Indonesia</span>
           <span>•</span>
           <a
-            href="mailto:youremail@example.com"
             className="hover:underline font-medium text-black"
+            href="https://wa.me/6281234567890"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Contact Me →
           </a>

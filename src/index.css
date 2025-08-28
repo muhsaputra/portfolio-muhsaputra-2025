@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html {
+  scroll-behavior: smooth;
+}
+
 .waving-hand {
   animation-name: wave-animation;
   animation-duration: 2.5s;

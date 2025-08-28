@@ -28,10 +28,11 @@ import skillsSecondary from "@/data/aboutSectionData/skillsSecondary";
 import networking from "@/data/aboutSectionData/networking";
 import experiences from "@/data/aboutSectionData/experiences";
 import skillsCreative from "@/data/aboutSectionData/skillsCreative";
-import TimelineItem from "@/components/ui/TimelineItem";
+import educationData from "@/data/aboutSectionData/educationData";
 
 // UI Components
 import Badge from "@/components/ui/Badge";
+import TimelineItem from "@/components/ui/TimelineItem";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 
 // Reusable components
@@ -113,17 +114,18 @@ export default function AboutSection() {
         <motion.div variants={fadeUp} className="lg:col-span-8">
           <Card className="rounded-3xl border border-neutral-200/80 dark:border-neutral-800/80">
             <CardContent className="p-8 md:p-10">
-              <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-8">
+              <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
                 <img
-                  src="./src/assets/images/Final.png"
+                  src="./src/assets/images/saputra.png"
                   alt="Profile"
-                  className="h-32 w-32 md:h-40 md:w-40 rounded-2xl object-cover border border-neutral-200 dark:border-neutral-800 shadow-sm"
+                  className="h-56 w-56 md:h-72 md:w-72 rounded-2xl object-cover border border-neutral-200 dark:border-neutral-800 shadow-sm"
                 />
+
                 <div>
                   <div className="flex flex-wrap items-center gap-2 mb-3">
                     <Badge color="blue">Frontend Developer</Badge>
-                    <Badge color="green">IT Support</Badge>
-                    <Badge color="purple">Video Editor</Badge>
+                    <Badge color="green">Video Editor</Badge>
+                    <Badge color="purple">IT Support</Badge>
                   </div>
                   <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">
                     <span>
@@ -131,7 +133,7 @@ export default function AboutSection() {
                     </span>
                     <span className="font-semibold"> Muhamad Tri Saputra</span>
                   </h3>
-                  <p className="mt-3 text-neutral-700 dark:text-neutral-300 max-w-3xl leading-relaxed text-justifyed">
+                  <div className="mt-3 text-neutral-700 dark:text-neutral-300 max-w-3xl leading-relaxed text-justifyed">
                     Saya seorang mahasiswa dengan minat di dunia teknologi dan
                     kreativitas. Fokus utama saya adalah{" "}
                     <PointerHighlight
@@ -145,8 +147,8 @@ export default function AboutSection() {
                       </span>
                     </PointerHighlight>
                     , membangun website modern yang interaktif dan responsif.
-                  </p>
-                  <p className="mt-3 text-neutral-700 dark:text-neutral-300 max-w-3xl leading-relaxed text-justifyed">
+                  </div>
+                  <div className="mt-3 text-neutral-700 dark:text-neutral-300 max-w-3xl leading-relaxed text-justifyed">
                     Selain itu, saya juga memiliki pengalaman di{" "}
                     <PointerHighlight
                       rectangleClassName="bg-green-100 dark:bg-green-900 border-green-300 dark:border-green-700 leading-loose"
@@ -167,7 +169,7 @@ export default function AboutSection() {
                     </PointerHighlight>{" "}
                     menjadikan saya terbiasa menggabungkan kemampuan teknis dan
                     visual untuk menghasilkan solusi digital yang optimal.
-                  </p>
+                  </div>
                   <div className="mt-5 flex flex-wrap gap-3">
                     <a
                       href="#projects"
@@ -176,7 +178,7 @@ export default function AboutSection() {
                       <FolderOpen className="w-4 h-4" /> Lihat Proyek
                     </a>
                     <a
-                      href="/cv.pdf"
+                      href="/MUHAMAD TRI SAPUTRA RESUME 2025.pdf"
                       download
                       className="inline-flex items-center gap-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white px-4 py-2.5 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-800"
                     >
@@ -216,10 +218,11 @@ export default function AboutSection() {
           <TabsList className="mb-8">
             <TabsTrigger value="profile">Profil</TabsTrigger>
             <TabsTrigger value="skills">Keahlian</TabsTrigger>
-            <TabsTrigger value="goals">Edukasi</TabsTrigger>
+            <TabsTrigger value="education">Edukasi</TabsTrigger>
             <TabsTrigger value="experience">Pengalaman</TabsTrigger>
           </TabsList>
         </div>
+
         {/* PROFILE */}
         <TabsContent value="profile">
           <motion.div
@@ -328,6 +331,7 @@ export default function AboutSection() {
             </motion.div>
           </motion.div>
         </TabsContent>
+
         {/* SKILLS */}
         <TabsContent value="skills">
           <motion.div
@@ -435,6 +439,7 @@ export default function AboutSection() {
             </motion.div>
           </motion.div>
         </TabsContent>
+
         {/* EXPERIENCE */}
         <TabsContent value="experience">
           <motion.div
@@ -443,26 +448,172 @@ export default function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <Card className="rounded-2xl border border-neutral-200 dark:border-neutral-800">
+            <Card className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-900 dark:to-neutral-950 shadow-lg">
               <CardHeader>
-                <CardTitle>Pengalaman</CardTitle>
-                <CardDescription>
-                  Perjalanan profesional singkat.
+                <CardTitle className="text-2xl font-bold tracking-tight">
+                  Pengalaman
+                </CardTitle>
+                <CardDescription className="text-sm">
+                  Jejak perjalanan profesional dan kontribusi saya.
                 </CardDescription>
               </CardHeader>
 
               <CardContent>
                 {/* Timeline wrapper */}
-                <div className="relative pl-8 before:absolute before:left-1.5 before:top-0 before:bottom-0 before:w-0.5 before:bg-neutral-200 dark:before:bg-neutral-800 space-y-12">
+                <div className="relative pl-10 before:absolute before:left-4 before:top-0 before:bottom-0 before:w-0.5 before:bg-gradient-to-b from-neutral-300 to-neutral-200 dark:from-neutral-700 dark:to-neutral-900 space-y-12">
                   {experiences.map((exp, idx) => (
-                    <TimelineItem
+                    <motion.div
                       key={idx}
-                      company={exp.company}
-                      location={exp.location}
-                      type={exp.type}
-                      duration={exp.duration}
-                      roles={exp.roles}
-                    />
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6, delay: idx * 0.2 }}
+                      className="relative group"
+                    >
+                      {/* Timeline dot */}
+                      <div className="absolute -left-7 top-2 w-5 h-5 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 dark:from-indigo-400 dark:to-purple-400 shadow-md ring-4 ring-white dark:ring-neutral-900"></div>
+
+                      {/* Experience Card */}
+                      <div className="p-5 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white/60 dark:bg-neutral-900/60 backdrop-blur-sm hover:shadow-xl transition-transform duration-300 hover:-translate-y-1">
+                        <div className="flex items-center justify-between">
+                          <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-100">
+                            {exp.company}
+                          </h3>
+                          <span className="text-xs font-medium px-2 py-1 rounded-full bg-indigo-100 text-indigo-600 dark:bg-indigo-900/40 dark:text-indigo-300">
+                            {exp.type}
+                          </span>
+                        </div>
+
+                        <div className="text-sm text-neutral-500 dark:text-neutral-400">
+                          {exp.location}
+                        </div>
+                        {exp.duration && (
+                          <div className="text-xs text-neutral-400 dark:text-neutral-500 mb-2">
+                            {exp.duration}
+                          </div>
+                        )}
+
+                        {/* Roles */}
+                        <div className="mt-3 space-y-4">
+                          {exp.roles.map((role, rIdx) => (
+                            <div
+                              key={rIdx}
+                              className="border-l-2 pl-4 border-neutral-200 dark:border-neutral-700"
+                            >
+                              <div className="flex items-center justify-between">
+                                <h4 className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">
+                                  {role.title}
+                                </h4>
+                                <span className="text-xs text-neutral-400 dark:text-neutral-500">
+                                  {role.year}
+                                </span>
+                              </div>
+
+                              <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-1">
+                                {role.desc}
+                              </p>
+
+                              {/* Skills pakai Badge */}
+                              {role.skills && role.skills.length > 0 && (
+                                <div className="mt-2 flex flex-wrap gap-2">
+                                  {role.skills.map((skill, sIdx) => (
+                                    <Badge
+                                      key={sIdx}
+                                      color={
+                                        typeof skill === "string"
+                                          ? "indigo"
+                                          : skill.color
+                                      }
+                                    >
+                                      {typeof skill === "string"
+                                        ? skill
+                                        : skill.name}
+                                    </Badge>
+                                  ))}
+                                </div>
+                              )}
+
+                              {/* Achievement (opsional) */}
+                              {role.achievement && (
+                                <p className="mt-2 text-xs italic text-neutral-500 dark:text-neutral-400">
+                                  🎉 {role.achievement}
+                                </p>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+        </TabsContent>
+
+        {/* EDUCATION */}
+        <TabsContent value="education">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <Card className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-900 dark:to-neutral-950 shadow-lg">
+              <CardHeader>
+                <CardTitle className="text-2xl font-bold tracking-tight">
+                  Pendidikan
+                </CardTitle>
+                <CardDescription className="text-sm">
+                  Riwayat pendidikan formal dan perjalanan akademik saya.
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent>
+                {/* Timeline wrapper */}
+                <div className="relative pl-10 before:absolute before:left-4 before:top-0 before:bottom-0 before:w-0.5 before:bg-gradient-to-b from-neutral-300 to-neutral-200 dark:from-neutral-700 dark:to-neutral-900 space-y-12">
+                  {educationData.map((edu, idx) => (
+                    <motion.div
+                      key={idx}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6, delay: idx * 0.2 }}
+                      className="relative group"
+                    >
+                      {/* Timeline dot */}
+                      <div className="absolute -left-7 top-2 w-5 h-5 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-500 dark:from-blue-400 dark:to-cyan-400 shadow-md ring-4 ring-white dark:ring-neutral-900"></div>
+
+                      {/* Education Card */}
+                      <div className="p-5 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white/60 dark:bg-neutral-900/60 backdrop-blur-sm hover:shadow-xl transition-transform duration-300 hover:-translate-y-1">
+                        <div className="flex items-center justify-between">
+                          <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-100">
+                            {edu.company}
+                          </h3>
+                          <span className="text-xs font-medium px-2 py-1 rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900/40 dark:text-blue-300">
+                            {edu.type}
+                          </span>
+                        </div>
+
+                        <div className="text-sm text-neutral-500 dark:text-neutral-400">
+                          {edu.location}
+                        </div>
+                        {edu.duration && (
+                          <div className="text-xs text-neutral-400 dark:text-neutral-500 mb-2">
+                            {edu.duration}
+                          </div>
+                        )}
+
+                        {/* Roles / Highlights */}
+                        {edu.roles && edu.roles.length > 0 && (
+                          <ul className="mt-3 list-disc list-inside text-sm text-neutral-600 dark:text-neutral-400 space-y-1">
+                            {edu.roles.map((role, rIdx) => (
+                              <li key={rIdx}>{role}</li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    </motion.div>
                   ))}
                 </div>
               </CardContent>
