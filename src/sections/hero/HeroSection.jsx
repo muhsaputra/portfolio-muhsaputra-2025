@@ -19,16 +19,15 @@ export default function HeroSection() {
 
         {/* Nama & Title */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
-          Frontend Developer · Network Administrator · Creative Media
+          Frontend Developer · <br></br> IT Support · Video Editor
         </h1>
 
         {/* Subtext */}
         <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
           Berawal dari dunia jaringan, saya kini berfokus sebagai Frontend
-          Developer dengan spesialisasi di React.js, Tailwind CSS, dan
-          JavaScript. Di luar itu, saya juga bergerak di bidang Creative Media,
-          menggabungkan sisi teknis dan kreatif untuk menghasilkan karya digital
-          yang bernilai.
+          Developer dengan spesialisasi JavaScript. Di luar itu, saya juga
+          menekuni bidang Video Editing dan Creative Media, menggabungkan sisi
+          teknis dan kreatif untuk menghasilkan karya digital yang bernilai.
         </p>
 
         {/* CTA Buttons */}
