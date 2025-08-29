@@ -1,5 +1,6 @@
 import { ArrowRight, Download } from "lucide-react";
 import { BackgroundLines } from "@/components/ui/background-lines";
+import { TextAnimate } from "@/components/magicui/text-animate";
 
 export default function HeroSection() {
   return (

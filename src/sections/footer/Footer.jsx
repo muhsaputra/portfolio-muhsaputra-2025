@@ -66,7 +66,7 @@ export default function FooterSection({
   className,
 }) {
   return (
-    <footer className={cn("bg-background w-full px-4", className)}>
+    <footer className={cn("bg-background w-full px-20", className)}>
       <div className="max-w-container mx-auto">
         <Footer>
           <FooterContent>
