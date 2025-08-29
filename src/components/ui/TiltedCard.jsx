@@ -37,6 +37,16 @@ export default function TiltedCard({
 
   const [lastY, setLastY] = useState(0);
 
+  // 🛠️ Normalize image path supaya aman di local & production
+  const normalizeImageSrc = (src) => {
+    if (!src) return "";
+    // Kalau sudah absolute URL (http/https), langsung return
+    if (src.startsWith("http://") || src.startsWith("https://")) return src;
+    // Kalau path relatif tanpa slash depan, tambahkan slash
+    if (!src.startsWith("/")) return `/${src}`;
+    return src;
+  };
+
   function handleMouse(e) {
     if (!ref.current) return;
 
@@ -100,7 +110,7 @@ export default function TiltedCard({
         }}
       >
         <motion.img
-          src={imageSrc}
+          src={normalizeImageSrc(imageSrc)} // ✅ fix path
           alt={altText}
           className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
           style={{
