@@ -6,6 +6,7 @@ import AboutSection from "./sections/about/AboutSection";
 import ScrollVelocity from "./components/ui/ScrollVelocity";
 import PortfolioSection from "./sections/portfolio/Portfolio";
 import Contact from "./sections/contact/Contact";
+import Footer from "./sections/footer/Footer";
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
       <PortfolioSection />
 
       <Contact />
+
+      <Footer />
     </>
   );
 }
