@@ -5,6 +5,8 @@ import HeroSection from "./sections/hero/HeroSection";
 import AboutSection from "./sections/about/AboutSection";
 import ScrollVelocity from "./components/ui/ScrollVelocity";
 import PortfolioSection from "./sections/portfolio/Portfolio";
+import Contact from "./sections/contact/Contact";
+
 function App() {
   return (
     <>
@@ -31,6 +33,8 @@ function App() {
       {/* About Section */}
       <AboutSection />
       <PortfolioSection />
+
+      <Contact />
     </>
   );
 }

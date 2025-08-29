@@ -186,7 +186,7 @@ export default function AboutSection() {
                   </div>
                   <div className="mt-5 flex flex-wrap gap-3">
                     <a
-                      href="#projects"
+                      href="#portfolio"
                       className="inline-flex items-center gap-2 rounded-xl bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 px-4 py-2.5 text-sm font-medium shadow hover:opacity-90"
                     >
                       <FolderOpen className="w-4 h-4" /> Lihat Proyek
