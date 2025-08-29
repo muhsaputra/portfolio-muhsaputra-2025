@@ -121,7 +121,7 @@ export default function AboutSection() {
                   className="h-56 w-56 md:h-72 md:w-72 rounded-2xl object-cover border border-neutral-200 dark:border-neutral-800 shadow-sm"
                 /> */}
                 <TiltedCard
-                  imageSrc="/saputra.png"
+                  imageSrc="saputra.png" // ✅ cukup nama file aja, otomatis jadi /saputra.png
                   altText="Muhamad Tri Saputra Profile"
                   captionText="This Is me!, Muhamad Tri Saputra"
                   containerHeight="300px"
