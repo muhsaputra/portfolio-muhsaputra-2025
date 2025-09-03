@@ -15,8 +15,6 @@ Website pribadi untuk menampilkan **profil, keterampilan, dan proyek** yang pern
 - 👤 About Section untuk perkenalan diri  
 - 🛠️ Skills Section menampilkan teknologi & tools yang dikuasai  
 - 📂 Portfolio Section berisi daftar project dengan deskripsi & link  
-- 📬 Contact Form terintegrasi dengan EmailJS  
-- 🌗 Dark/Light Mode (opsional)  
 - 📱 Desain responsif (mobile, tablet, desktop)  
 
 ---
